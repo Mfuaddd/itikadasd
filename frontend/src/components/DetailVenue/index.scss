@@ -1,0 +1,94 @@
+.detail-venue {
+  border-top:1px solid #e5e7eb ;
+  &__wrapper {
+    padding: 20px;
+  }
+  &__header{
+    font-size: 30px;
+    font-family: 700;
+    line-height: 36px;
+    padding: 32px 0;
+  }
+  &__body{
+    display: flex;
+    gap: 40px;
+  }
+  &__map {
+    width: 60%;
+    iframe{
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+  }
+  &__place {
+    width: 40%;
+    padding: 16px 24px;
+    background-color: #fff;
+    border-radius: 20px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    &__name {
+      width: 60%;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    &__address {
+      width: 30%;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      color: #6b7280;
+      margin-bottom: 25px;
+    }
+    &__title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-bottom: 5px;
+    }
+    &__phone {
+      a {
+        color: #6b7280;
+        margin-bottom: 5px;
+      }
+      margin-bottom: 20px;
+    }
+    &__mobile {
+      a {
+        color: #6b7280;
+        margin-bottom: 5px;
+      }
+      margin-bottom: 20px;
+    }
+    &__button {
+      background-color: #ffdd00;
+      border-radius: 50px;
+      display: inline-block;
+      a {
+        color: #000;
+        display: block;
+        padding: 16px 48px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    &__body{
+      display: flex;
+      flex-direction: column;
+    }
+    &__map {
+      width: 100%;
+      height: 320px;
+    }
+    &__place {
+      width: 100%;
+    }
+  }
+}

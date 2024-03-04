@@ -1,0 +1,27 @@
+.detail-similar {
+  &__wrapper {
+    padding: 20px;
+  }
+  &__header{
+    font-size: 30px;
+    font-family: 700;
+    line-height: 36px;
+  padding: 32px 0;
+  }
+  &__body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+  }
+  @media only screen and (max-width: 1256px) {
+    &__body {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    &__body {
+      grid-template-columns: 1fr;
+    }
+  }
+}
